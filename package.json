@@ -1,29 +1,21 @@
 {
   "name": "udundi-test",
   "version": "1.0.0",
-  "description": "Front end web dev skills test",
-  "main": "index.html",
+  "description": "Front end development test using Bootstrap, AOS",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./js/index.js",
-    "build": "webpack"
-  },
-  "engines": {
-    "node": "14.x"
+    "start": "js/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danieljhawn/udundi-test.git"
   },
-  "author": "Daniel J Hawn",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danieljhawn/udundi-test/issues"
   },
-  "homepage": "https://github.com/danieljhawn/udundi-test#readme",
-  "devDependencies": {
-  },
-  "dependencies": {
-
-  }
+  "homepage": "https://github.com/danieljhawn/udundi-test#readme"
 }
