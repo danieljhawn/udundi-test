@@ -10826,6 +10826,10 @@ body {
   padding-right: 1rem;
 }
 
+#details {
+  display: none;
+}
+
 .content {
   background-color: white;
   color: #2a2a2a;

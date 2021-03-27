@@ -60,6 +60,10 @@ body {
   }
 }
 
+#details {
+  display: none;
+}
+
 .content {
   background-color: $white;
   color: $dark-grey;
