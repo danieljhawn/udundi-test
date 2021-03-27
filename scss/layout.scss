@@ -1,0 +1,23 @@
+@import "../scss/variables";
+
+.container-fluid {
+  height: 100vh;
+  // width: 100vw;
+  background-color: greenyellow;
+}
+
+.left {
+  color: $purple;
+  background-color: $main-color;
+}
+
+.row {
+  height: 100vh;
+}
+
+.right {
+  color: $yellow-300;
+  background-image: url(/img/Coding-Challenge-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

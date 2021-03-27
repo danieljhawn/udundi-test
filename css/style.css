@@ -10729,22 +10729,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-body {
-  color: white;
-  font-family: Helvetica, sans-serif;
-  line-height: 2rem;
-  background-color: #611818;
-}
-
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   height: 100vh;
   background-color: greenyellow;
@@ -10764,6 +10748,22 @@ body {
   background-image: url(/img/Coding-Challenge-Image.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  line-height: 2rem;
+  background-color: #611818;
 }
 
 .explore {
