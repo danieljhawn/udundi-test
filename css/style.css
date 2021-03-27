@@ -10750,30 +10750,6 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
 }
 
-.content .close-icon {
-  position: absolute;
-  right: 32px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-}
-.content .close-icon:before,
-.content .close-icon:after {
-  position: absolute;
-  left: 20px;
-  content: " ";
-  height: 26px;
-  width: 3px;
-  background-color: #611818;
-}
-.content .close-icon:before {
-  transform: rotate(45deg);
-}
-.content .close-icon:after {
-  transform: rotate(-45deg);
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -10806,6 +10782,8 @@ body {
   position: absolute;
   top: 50%;
   left: 9%;
+  opacity: 1;
+  transition: opacity 1s;
 }
 .explore h2, .explore .h2 {
   font-family: "Playfair Display", serif;
@@ -10827,9 +10805,11 @@ body {
 }
 
 .hide-explore {
-  width: 0;
-  height: 0;
-  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .content {
@@ -10842,35 +10822,8 @@ body {
   left: 12%;
   top: 76%;
   padding: 0rem;
-  max-width: 37rem;
+  max-width: 42rem;
   overflow: hidden;
-  transition: max-width 0.5s, padding 0.5s, border-radius 0.5s;
-}
-.content h2, .content .h2 {
-  color: #611818;
-  font-family: "Playfair Display", serif;
-  font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: 0.2rem;
-}
-.content h2:after, .content .h2:after {
-  content: "";
-  background: linear-gradient(to right, rgba(161, 101, 82, 0.9), rgba(161, 101, 82, 0) 70%);
-  display: block;
-  height: 2px;
-  width: 500px;
-  bottom: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.content button {
-  color: white;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  padding: 0.8rem 4.5rem;
-  margin-top: 2rem;
-  background: linear-gradient(to right, #611818, #a16552);
 }
 
 .show-menu {
@@ -10878,26 +10831,26 @@ body {
   color: #2a2a2a;
   position: absolute;
   left: 9%;
-  top: 25%;
+  top: 15%;
   padding: 4rem;
-  max-width: 37rem;
+  width: 42rem;
+  height: 46rem;
   overflow: hidden;
-  transition: max-width 0.5s, padding 0.5s, border-radius 0.5s;
+  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
 }
 .show-menu .close-icon {
   position: absolute;
-  right: 32px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
+  right: 1.2rem;
+  top: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   cursor: pointer;
 }
 .show-menu .close-icon:before,
 .show-menu .close-icon:after {
   position: absolute;
-  left: 20px;
   content: " ";
-  height: 26px;
+  height: 2rem;
   width: 3px;
   background-color: #611818;
 }
