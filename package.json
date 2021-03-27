@@ -22,10 +22,8 @@
   },
   "homepage": "https://github.com/danieljhawn/udundi-test#readme",
   "devDependencies": {
-    "bootstrap": "^5.0.0-beta3"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3",
-    "express": "^4.17.1"
+
   }
 }
