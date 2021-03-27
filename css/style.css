@@ -10826,19 +10826,25 @@ body {
   padding-right: 1rem;
 }
 
-#details {
-  display: none;
+.hide-explore {
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .content {
+  border-radius: 50%;
+  width: 0;
+  height: 0;
   background-color: white;
   color: #2a2a2a;
   position: absolute;
-  left: 9%;
-  top: 25%;
-  padding: 4rem;
+  left: 12%;
+  top: 76%;
+  padding: 0rem;
   max-width: 37rem;
   overflow: hidden;
+  transition: max-width 0.5s, padding 0.5s, border-radius 0.5s;
 }
 .content h2, .content .h2 {
   color: #611818;
@@ -10858,6 +10864,67 @@ body {
   margin-bottom: 25px;
 }
 .content button {
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem 4.5rem;
+  margin-top: 2rem;
+  background: linear-gradient(to right, #611818, #a16552);
+}
+
+.show-menu {
+  background-color: white;
+  color: #2a2a2a;
+  position: absolute;
+  left: 9%;
+  top: 25%;
+  padding: 4rem;
+  max-width: 37rem;
+  overflow: hidden;
+  transition: max-width 0.5s, padding 0.5s, border-radius 0.5s;
+}
+.show-menu .close-icon {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.show-menu .close-icon:before,
+.show-menu .close-icon:after {
+  position: absolute;
+  left: 20px;
+  content: " ";
+  height: 26px;
+  width: 3px;
+  background-color: #611818;
+}
+.show-menu .close-icon:before {
+  transform: rotate(45deg);
+}
+.show-menu .close-icon:after {
+  transform: rotate(-45deg);
+}
+.show-menu h2, .show-menu .h2 {
+  color: #611818;
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+.show-menu h2:after, .show-menu .h2:after {
+  content: "";
+  background: linear-gradient(to right, rgba(161, 101, 82, 0.9), rgba(161, 101, 82, 0) 70%);
+  display: block;
+  height: 2px;
+  width: 500px;
+  bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.show-menu button {
   color: white;
   border: none;
   text-transform: uppercase;

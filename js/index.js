@@ -1,12 +1,18 @@
 function showHide() {
   console.log("event triggered");
+
   details = document.getElementById("details");
   hero = document.getElementById("explore-hero");
-  if (details.style.display === "none") {
-    details.style.display = "block";
-    hero.style.display = "none";
+
+  if (details.classList.contains("content")) {
+    details.classList.remove("content");
+    details.classList.add("show-menu");
+    hero.classList.remove("explore");
+    hero.classList.add("hide-explore");
   } else {
-    details.style.display = "none";
-    hero.style.display = "block";
+    details.classList.add("content");
+    details.classList.remove("show-menu");
+    hero.classList.remove("hide-explore");
+    hero.classList.add("explore");
   }
 }
