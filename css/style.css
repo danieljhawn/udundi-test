@@ -10787,7 +10787,7 @@ body {
 }
 .explore h2, .explore .h2 {
   font-family: "Playfair Display", serif;
-  font-size: 13rem;
+  font-size: 12rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
@@ -10824,6 +10824,8 @@ body {
   padding: 0rem;
   max-width: 42rem;
   overflow: hidden;
+  transform-origin: bottom right;
+  transition: padding 0.5s, width 0.5s, border-radius 0.5s;
 }
 
 .show-menu {
@@ -10833,10 +10835,9 @@ body {
   left: 9%;
   top: 15%;
   padding: 4rem;
-  width: 42rem;
-  height: 46rem;
-  overflow: hidden;
-  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
+  max-width: 38rem;
+  transform-origin: bottom right;
+  transition: padding 0.5s, width 0.5s, border-radius 0.5s;
 }
 .show-menu .close-icon {
   position: absolute;
