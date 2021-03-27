@@ -10745,7 +10745,7 @@ textarea.form-control-lg {
 
 .right {
   color: #ffda6a;
-  background-image: url(/img/Coding-Challenge-Image.png);
+  background-image: url(../img/Coding-Challenge-Image.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10831,7 +10831,7 @@ body {
   color: #2a2a2a;
   position: absolute;
   left: 9%;
-  top: 15%;
+  top: 25%;
   padding: 4rem;
   width: 42rem;
   height: 46rem;
