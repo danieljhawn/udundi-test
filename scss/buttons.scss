@@ -1,0 +1,25 @@
+.content {
+  .close-icon {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+  .close-icon:before,
+  .close-icon:after {
+    position: absolute;
+    left: 20px;
+    content: " ";
+    height: 26px;
+    width: 3px;
+    background-color: $main-color;
+  }
+  .close-icon:before {
+    transform: rotate(45deg);
+  }
+  .close-icon:after {
+    transform: rotate(-45deg);
+  }
+}

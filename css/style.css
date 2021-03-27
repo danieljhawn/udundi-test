@@ -10750,6 +10750,30 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
 }
 
+.content .close-icon {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.content .close-icon:before,
+.content .close-icon:after {
+  position: absolute;
+  left: 20px;
+  content: " ";
+  height: 26px;
+  width: 3px;
+  background-color: #611818;
+}
+.content .close-icon:before {
+  transform: rotate(45deg);
+}
+.content .close-icon:after {
+  transform: rotate(-45deg);
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -10764,6 +10788,18 @@ body {
   font-family: Helvetica, sans-serif;
   line-height: 2rem;
   background-color: #611818;
+}
+
+.social {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.social img {
+  padding: 0.5rem;
 }
 
 .explore {
@@ -10790,16 +10826,41 @@ body {
   padding-right: 1rem;
 }
 
-.social {
+.content {
+  background-color: white;
+  color: #2a2a2a;
   position: absolute;
-  right: 0%;
-  bottom: 0%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+  left: 9%;
+  top: 25%;
+  padding: 4rem;
+  max-width: 37rem;
+  overflow: hidden;
 }
-.social img {
-  padding: 0.5rem;
+.content h2, .content .h2 {
+  color: #611818;
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+}
+.content h2:after, .content .h2:after {
+  content: "";
+  background: linear-gradient(to right, rgba(161, 101, 82, 0.9), rgba(161, 101, 82, 0), rgba(161, 101, 82, 0) 70%);
+  display: block;
+  height: 2px;
+  width: 500px;
+  bottom: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.content button {
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0.8rem 4.5rem;
+  margin-top: 2rem;
+  background: linear-gradient(to right, #611818, #a16552);
 }
 
 /*# sourceMappingURL=style.css.map */
