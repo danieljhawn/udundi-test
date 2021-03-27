@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap");
 @import "../scss/variables";
 @import "../scss/layout";
-@import "../scss/buttons";
 
 a:link,
 a:visited,
@@ -37,6 +36,8 @@ body {
   position: absolute;
   top: 50%;
   left: 9%;
+  opacity: 1;
+  transition: opacity 1s;
 
   h2 {
     font-family: $serif-font;
@@ -60,15 +61,65 @@ body {
   }
 }
 
+.hide-explore {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
 .content {
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  background-color: $white;
+  color: $dark-grey;
+  position: absolute;
+  left: 12%;
+  top: 76%;
+  padding: 0rem;
+  max-width: 42rem;
+  overflow: hidden;
+  // transition: padding .5s, border-radius .5s;
+}
+
+.show-menu {
   background-color: $white;
   color: $dark-grey;
   position: absolute;
   left: 9%;
-  top: 25%;
+  top: 15%;
   padding: 4rem;
-  max-width: 37rem;
+  // max-width: 42rem;
+  width: 42rem;
+  height: 46rem;
   overflow: hidden;
+  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
+
+  .close-icon {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+  }
+  .close-icon:before,
+  .close-icon:after {
+    position: absolute;
+    // left: -1rem;
+    content: " ";
+    height: 2rem;
+    width: 3px;
+    background-color: $main-color;
+  }
+  .close-icon:before {
+    transform: rotate(45deg);
+  }
+  .close-icon:after {
+    transform: rotate(-45deg);
+  }
 
   h2 {
     color: $main-color;
@@ -76,12 +127,15 @@ body {
     font-size: 5rem;
     font-weight: 900;
     letter-spacing: 0.2rem;
-
   }
 
   h2:after {
     content: "";
-    background: linear-gradient( to right, rgb(161, 101, 82, .9), rgb(161, 101, 82, .0) 70%);
+    background: linear-gradient(
+      to right,
+      rgb(161, 101, 82, 0.9),
+      rgb(161, 101, 82, 0) 70%
+    );
     display: block;
     height: 2px;
     width: 500px;
@@ -97,6 +151,6 @@ body {
     letter-spacing: 0.2rem;
     padding: 0.8rem 4.5rem;
     margin-top: 2rem;
-    background: linear-gradient( to right, $main-color, $light-brown);
+    background: linear-gradient(to right, $main-color, $light-brown);
   }
 }
