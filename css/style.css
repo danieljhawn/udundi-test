@@ -10790,4 +10790,16 @@ body {
   padding-right: 1rem;
 }
 
+.social {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.social img {
+  padding: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

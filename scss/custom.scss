@@ -47,3 +47,16 @@ body {
     }
   }
 }
+
+.social {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    padding: 0.5rem;
+  }
+}
