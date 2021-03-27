@@ -10845,7 +10845,7 @@ body {
 }
 .content h2:after, .content .h2:after {
   content: "";
-  background: linear-gradient(to right, rgba(161, 101, 82, 0.9), rgba(161, 101, 82, 0), rgba(161, 101, 82, 0) 70%);
+  background: linear-gradient(to right, rgba(161, 101, 82, 0.9), rgba(161, 101, 82, 0) 70%);
   display: block;
   height: 2px;
   width: 500px;
