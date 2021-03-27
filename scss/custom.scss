@@ -1,1 +1,73 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap");
+
+$serif-font: "Playfair Display", serif;
+$sans-font: Helvetica, sans-serif;
+$main-color: rgb(97, 24, 24);
+$light-brown: rgb(161, 101, 82);
+$white: rgb(255, 255, 255);
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: $white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  color: $white;
+  font-family: $sans-font;
+  line-height: 2rem;
+  background-color: $main-color;
+}
+
+.container-fluid {
+  height: 100vh;
+  // width: 100vw;
+  background-color: greenyellow;
+}
+
+.left {
+  color: $purple;
+  background-color: $main-color;
+}
+
+.row {
+  height: 100vh;
+}
+
+.right {
+  color: $yellow-300;
+  background-image: url(/img/Coding-Challenge-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.explore {
+  position: absolute;
+  top: 50%;
+  left: 9%;
+
+  h2 {
+    font-family: $serif-font;
+    font-size: 13rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-family: $sans-font;
+    color: $white;
+    position: relative;
+    left: 2.5rem;
+    top: -1rem;
+    cursor: pointer;
+
+    img {
+      padding-right: 1rem;
+    }
+  }
+}
