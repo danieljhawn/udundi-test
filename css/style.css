@@ -10731,7 +10731,7 @@ textarea.form-control-lg {
 }
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   height: 100vh;
-  background-color: greenyellow;
+  background-color: #611818;
 }
 
 .left {
@@ -10745,7 +10745,7 @@ textarea.form-control-lg {
 
 .right {
   color: #ffda6a;
-  background-image: url(/img/Coding-Challenge-Image.png);
+  background-image: url(../img/Coding-Challenge-Image.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10824,6 +10824,7 @@ body {
   padding: 0rem;
   max-width: 42rem;
   overflow: hidden;
+  transition: padding 0.5s, border-radius 0.5s;
 }
 
 .show-menu {

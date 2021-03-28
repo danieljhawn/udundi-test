@@ -4,7 +4,9 @@
   "description": "Front end web dev skills test",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch-sass": "sass --watch scss/custom.scss:css/style.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/danieljhawn/udundi-test#readme",
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.0.0-beta3",
+    "npm": "^7.7.5",
+    "sass": "^1.32.8"
   }
 }

@@ -1,6 +1,4 @@
 function showHide() {
-  console.log("event triggered");
-
   details = document.getElementById("details");
   hero = document.getElementById("explore-hero");
 
