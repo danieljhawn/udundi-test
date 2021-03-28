@@ -10824,7 +10824,11 @@ body {
   padding: 0rem;
   max-width: 42rem;
   overflow: hidden;
+<<<<<<< HEAD
   transition: padding 0.5s, border-radius 0.5s;
+=======
+  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
+>>>>>>> cc8f851c42a69ae091766563625479b3c21aec10
 }
 
 .show-menu {
@@ -10832,7 +10836,7 @@ body {
   color: #2a2a2a;
   position: absolute;
   left: 9%;
-  top: 15%;
+  top: 25%;
   padding: 4rem;
   width: 42rem;
   height: 46rem;
