@@ -10832,10 +10832,9 @@ body {
   color: #2a2a2a;
   position: absolute;
   left: 9%;
-  top: 25%;
+  top: 15%;
   padding: 4rem;
-  width: 42rem;
-  height: 46rem;
+  width: 35rem;
   overflow: hidden;
   transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
 }
@@ -10864,7 +10863,7 @@ body {
 .show-menu h2, .show-menu .h2 {
   color: #611818;
   font-family: "Playfair Display", serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   letter-spacing: 0.2rem;
 }
