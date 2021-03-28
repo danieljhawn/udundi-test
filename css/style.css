@@ -10824,6 +10824,7 @@ body {
   padding: 0rem;
   max-width: 42rem;
   overflow: hidden;
+  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
 }
 
 .show-menu {

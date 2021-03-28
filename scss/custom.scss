@@ -81,7 +81,7 @@ body {
   padding: 0rem;
   max-width: 42rem;
   overflow: hidden;
-  // transition: padding .5s, border-radius .5s;
+  transition: padding 0.5s, height 0.5s, width 0.5s, border-radius 0.5s;
 }
 
 .show-menu {
@@ -91,7 +91,6 @@ body {
   left: 9%;
   top: 15%;
   padding: 4rem;
-  // max-width: 42rem;
   width: 42rem;
   height: 46rem;
   overflow: hidden;
@@ -108,7 +107,6 @@ body {
   .close-icon:before,
   .close-icon:after {
     position: absolute;
-    // left: -1rem;
     content: " ";
     height: 2rem;
     width: 3px;
